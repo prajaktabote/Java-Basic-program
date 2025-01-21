@@ -1,36 +1,24 @@
-package practice;
+package Loops;
 
 public class prime {
 	public static void main(String[] args) {
 		
-		int n=6;
-		int count=0;
+		int n=9;
+		int i=2;
+		int temp=0;
 		
-		for(int i=1;i<=n;i++) {
+		while(i<=n-1) {
 			if(n%i==0) {
-				count++;
+				temp=temp+1;
 			}
-		}
-		if(count==2) {
-			System.out.println("prime");
-		}
-		else {
-			System.out.println("not prime");
+			i++;
 		}
 		
-		/*
-		
-		for(int i=2;i<n;i++) {
-			if(n%i==0) {
-				count++;
-			}
+		if(temp==0) {
+			System.out.println(n+" is prime.");
+		}else
+		{
+			System.out.println(n+" is not prime");
 		}
-		if(count==0) {
-			System.out.println("prime");
-		}
-		else {
-			System.out.println("Not prime");
-		}
-*/
 	}
 }

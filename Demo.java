@@ -1,26 +1,21 @@
-package Patterns;
+package Loops;
+
+import java.util.Scanner;
 
 public class Demo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		
-		int size=5;
-		for(int i=1;i<=size;i++) {//to print * * * * *
-			for(int j=1;j<=size;j++) {//to repeat the line of stars
-				System.out.print("* ");
+		int sum=0;
+		for(int i=50;i<=59;i++) {
+			if(i%3==0) {
+				continue;
 			}
-			System.out.println();
-		}
-		
-		System.out.println("--------------------------------------");
-		
-		for(int i=0;i<=size;i++) {
-			for(int j=i;j<=size;j++) {
-				System.out.print("* ");
+			if(i==8) {
+				break;
 			}
-			System.out.println();
+			sum=sum+i;
+			
 		}
+		System.out.println(sum);
 	}
-	
 }
-//i for rows
-//j for columns
